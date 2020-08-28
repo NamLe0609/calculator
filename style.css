@@ -1,0 +1,110 @@
+body {
+    background-color: #282828;
+    font-family: monospace;
+}
+
+#calculator {
+    margin: 90px auto auto auto;
+    width: 500px;
+    border: white 5px solid;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #181818;
+}
+
+#display {
+    border-bottom: 1px white solid;
+    padding-top: 5px;
+    height: 100px;
+    width: 500px;
+    text-align: right;
+    font-size: 35px;
+    color: white;
+}
+
+#button-container {
+    width: 500px;
+    display: inline-flex;
+    flex-flow: row;
+}
+
+#numpad-container {
+    margin-top: 20px;
+    height: 600px;
+    flex: 2 1;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#numpad-container button {
+    flex: 1 1 80px;
+    margin: 3px;
+    background-color: #0d3580;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+}
+
+#arithmatics {
+    align-self: flex-end;
+    height: 600px;
+    flex: 1 1;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#arithmatics button {
+    flex: 1 1 60px;
+    margin: 3px;
+    background-color: #1761b0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+}
+
+#delete {
+    background-color: #af0c15 !important;
+}
+
+#clear {
+    background-color: #af0c15 !important;
+}
+
+#equals {
+    background-color: #af890c !important;
+}
+
+#answer {
+    background-color: #af890c !important;
+}
+
+#keyboard-note {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    border: #282828 1px solid;
+    background-color: #282828;
+    margin: 10px auto auto auto;
+    color: white;
+    z-index: -1;
+}
+
+#keyboard-note ul {
+    list-style-type: none;
+}
+
+#keyboard-note ul li {
+    font-size: 16px;
+    color: white;
+}
